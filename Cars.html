@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>City Car Rental</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="myFunctions.js"></script>
+</head>
+
+<body>
+    <h1>Car Hire</h1>
+    <nav id="menu" aria-label="Main navigation"><a href="home.html">Home</a><a href="AboutUs.html">About Us</a><a
+            href="Cars.html" aria-current="page">Cars</a></nav>
+    <hr />
+    <main class="page-content">
+        <h2>Available Cars</h2>
+        <table id="carsTable">
+            <tr>
+                <th>Code</th>
+                <th>Model</th>
+                <th>Year</th>
+                <th>Daily Price (SYP)</th>
+                <th>Show Details</th>
+                <th>Choose</th>
+            </tr>
+            <tr id="row1">
+                <td>CR-001</td>
+                <td class="model">Honda Civic</td>
+                <td>2023</td>
+                <td class="price">270000</td>
+                <td><input type="checkbox" class="detailsBox" value="1" /></td>
+                <td><input type="checkbox" class="chooseBox" value="1" /></td>
+            </tr>
+            <tr id="details1" class="details">
+                <td colspan="6">
+                    <div class="details-panel">
+                        <div class="details-header">
+                            <div class="details-title-group">
+
+                                <strong class="details-car-title">Honda Civic • 2023</strong>
+                            </div>
+
+                        </div>
+                        <div class="specs-grid">
+                            <div class="spec-card">
+
+                                <div class="spec-info">
+                                    <span class="spec-label">Fuel</span>
+                                    <span class="spec-value">Petrol</span>
+                                </div>
+                            </div>
+                            <div class="spec-card">
+
+                                <div class="spec-info">
+                                    <span class="spec-label">Gearbox</span>
+                                    <span class="spec-value">Automatic</span>
+                                </div>
+                            </div>
+                            <div class="spec-card">
+
+                                <div class="spec-info">
+                                    <span class="spec-label">Seats</span>
+                                    <span class="spec-value">5 Seats</span>
+                                </div>
+                            </div>
+                            <div class="spec-card">
+
+                                <div class="spec-info">
+                                    <span class="spec-label">Mileage</span>
+                                    <span class="spec-value">21,000 km</span>
+                                </div>
+                            </div>
+                            <div class="spec-card">
+
+                                <div class="spec-info">
+                                    <span class="spec-label">Color</span>
+                                    <span class="spec-value color-spec">
+                                        White
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr id="row2">
+                <td>CR-002</td>
+                <td class="model">Renault Symbol</td>
+                <td>2021</td>
+                <td class="price">190000</td>
+                <td><input type="checkbox" class="detailsBox" value="2" /></td>
+                <td><input type="checkbox" class="chooseBox" value="2" /></td>
+            </tr>
+            <tr id="details2" class="details">
+                <td colspan="6">
+                    <div class="details-panel">
+                        <div class="details-header">
+                            <div class="details-title-group">
+
+                                <strong class="details-car-title">Renault Symbol • 2021</strong>
+                            </div>
+
+                        </div>
+                        <div class="specs-grid">
+                            <div class="spec-card">
+                                <div class="spec-info">
+                                    <span class="spec-label">Fuel</span>
+                                    <span class="spec-value">Petrol</span>
+                                </div>
+                            </div>
+                            <div class="spec-card">
+                                <div class="spec-info">
+                                    <span class="spec-label">Gearbox</span>
+                                    <span class="spec-value">Manual</span>
+                                </div>
+                            </div>
+                            <div class="spec-card">
+                                <div class="spec-info">
+                                    <span class="spec-label">Seats</span>
+                                    <span class="spec-value">5 Seats</span>
+                                </div>
+                            </div>
+                            <div class="spec-card">
+                                <div class="spec-info">
+                                    <span class="spec-label">Mileage</span>
+                                    <span class="spec-value">65,000 km</span>
+                                </div>
+                            </div>
+                            <div class="spec-card">
+                                <div class="spec-info">
+                                    <span class="spec-label">Color</span>
+                                    <span class="spec-value color-spec">
+                                        Red
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr id="row3">
+                <td>CR-003</td>
+                <td class="model">Skoda Octavia</td>
+                <td>2022</td>
+                <td class="price">330000</td>
+                <td><input type="checkbox" class="detailsBox" value="3" /></td>
+                <td><input type="checkbox" class="chooseBox" value="3" /></td>
+            </tr>
+            <tr id="details3" class="details">
+                <td colspan="6">
+                    <div class="details-panel">
+                        <div class="details-header">
+                            <div class="details-title-group">
+
+                                <strong class="details-car-title">Skoda Octavia • 2022</strong>
+                            </div>
+
+                        </div>
+                        <div class="specs-grid">
+                            <div class="spec-card">
+                                <div class="spec-info">
+                                    <span class="spec-label">Fuel</span>
+                                    <span class="spec-value">Diesel</span>
+                                </div>
+                            </div>
+                            <div class="spec-card">
+                                <div class="spec-info">
+                                    <span class="spec-label">Gearbox</span>
+                                    <span class="spec-value">Automatic</span>
+                                </div>
+                            </div>
+                            <div class="spec-card">
+                                <div class="spec-info">
+                                    <span class="spec-label">Seats</span>
+                                    <span class="spec-value">5 Seats</span>
+                                </div>
+                            </div>
+                            <div class="spec-card">
+                                <div class="spec-info">
+                                    <span class="spec-label">Mileage</span>
+                                    <span class="spec-value">47,000 km</span>
+                                </div>
+                            </div>
+                            <div class="spec-card">
+                                <div class="spec-info">
+                                    <span class="spec-label">Color</span>
+                                    <span class="spec-value color-spec">
+                                        Grey
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr id="row4">
+                <td>CR-004</td>
+                <td class="model">Nissan Qashqai</td>
+                <td>2024</td>
+                <td class="price">420000</td>
+                <td><input type="checkbox" class="detailsBox" value="4" /></td>
+                <td><input type="checkbox" class="chooseBox" value="4" /></td>
+            </tr>
+            <tr id="details4" class="details">
+                <td colspan="6">
+                    <div class="details-panel">
+                        <div class="details-header">
+                            <div class="details-title-group">
+
+                                <strong class="details-car-title">Nissan Qashqai • 2024</strong>
+                            </div>
+
+                        </div>
+                        <div class="specs-grid">
+                            <div class="spec-card">
+                                <div class="spec-info">
+                                    <span class="spec-label">Fuel</span>
+                                    <span class="spec-value">Petrol</span>
+                                </div>
+                            </div>
+                            <div class="spec-card">
+                                <div class="spec-info">
+                                    <span class="spec-label">Gearbox</span>
+                                    <span class="spec-value">Automatic</span>
+                                </div>
+                            </div>
+                            <div class="spec-card">
+                                <div class="spec-info">
+                                    <span class="spec-label">Seats</span>
+                                    <span class="spec-value">5 Seats</span>
+                                </div>
+                            </div>
+                            <div class="spec-card">
+                                <div class="spec-info">
+                                    <span class="spec-label">Mileage</span>
+                                    <span class="spec-value">8,000 km</span>
+                                </div>
+                            </div>
+                            <div class="spec-card">
+                                <div class="spec-info">
+                                    <span class="spec-label">Color</span>
+                                    <span class="spec-value color-spec">
+                                        Black
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr id="row5">
+                <td>CR-005</td>
+                <td class="model">Fiat Tipo</td>
+                <td>2020</td>
+                <td class="price">175000</td>
+                <td><input type="checkbox" class="detailsBox" value="5" /></td>
+                <td><input type="checkbox" class="chooseBox" value="5" /></td>
+            </tr>
+            <tr id="details5" class="details">
+                <td colspan="6">
+                    <div class="details-panel">
+                        <div class="details-header">
+                            <div class="details-title-group">
+
+                                <strong class="details-car-title">Fiat Tipo • 2020</strong>
+                            </div>
+
+                        </div>
+                        <div class="specs-grid">
+                            <div class="spec-card">
+                                <div class="spec-info">
+                                    <span class="spec-label">Fuel</span>
+                                    <span class="spec-value">Diesel</span>
+                                </div>
+                            </div>
+                            <div class="spec-card">
+                                <div class="spec-info">
+                                    <span class="spec-label">Gearbox</span>
+                                    <span class="spec-value">Manual</span>
+                                </div>
+                            </div>
+                            <div class="spec-card">
+                                <div class="spec-info">
+                                    <span class="spec-label">Seats</span>
+                                    <span class="spec-value">5 Seats</span>
+                                </div>
+                            </div>
+                            <div class="spec-card">
+                                <div class="spec-info">
+                                    <span class="spec-label">Mileage</span>
+                                    <span class="spec-value">92,000 km</span>
+                                </div>
+                            </div>
+                            <div class="spec-card">
+                                <div class="spec-info">
+                                    <span class="spec-label">Color</span>
+                                    <span class="spec-value color-spec">
+                                        Blue
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <p><input type="button" id="continueBtn" value="Continue" /></p>
+
+        <form id="bookingForm" action="#" method="post">
+            <fieldset>
+                <legend>Booking Form</legend>
+                <p><label for="fullName">Full name :</label><br /><input type="text" id="fullName" /> <span
+                        class="error" id="fullNameError"></span></p>
+                <p><label for="nationalId">National number *:</label><br /><input type="text" id="nationalId" /> <span
+                        class="error" id="nationalIdError"></span></p>
+                <p><label for="startDate">Start date *:</label><br /><input type="date" id="startDate"
+                        aria-describedby="startDateError" /> <span class="error" id="startDateError"></span></p>
+                <p><label for="endDate">End date *:</label><br /><input type="date" id="endDate"
+                        aria-describedby="endDateError" /> <span class="error" id="endDateError"></span></p>
+                <p><label for="mobile">Mobile number:</label><br /><input type="tel" id="mobile" /> <span class="error"
+                        id="mobileError"></span></p>
+                <p><label for="email">Email:</label><br /><input type="email" id="email" /> <span class="error"
+                        id="emailError"></span></p>
+                <p><input type="submit" value="Send" /></p>
+            </fieldset>
+        </form>
+    </main>
+    <hr />
+</body>
+
+</html>
